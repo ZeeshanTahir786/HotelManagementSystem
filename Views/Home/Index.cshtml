@@ -207,7 +207,7 @@
                                             <td><p>DD/MM/YYYY</p></td>
                                             <td>Status</td>
                                             <td>
-                                                <button class="btn btn-primary">CheckOut</button>
+                                                <button class="btn btn-primary">CheckIn</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -218,7 +218,7 @@
                                             <td><p>DD/MM/YYYY</p></td>
                                             <td>Reserved</td>
                                             <td>
-                                                <button class="btn btn-primary">CheckOut</button>
+                                                <button class="btn btn-primary">CheckIn</button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -260,7 +260,55 @@
                                             <td><p>DD/MM/YYYY</p></td>
                                             <td>Status</td>
                                             <td>
-                                                <button class="btn btn-primary">CheckOut</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                    Check Out
+                                                </button>
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">Eagle West Hotel- (Guest Reciept)</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div>
+                                                                    <form>
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputEmail4">Guest Name</label>
+                                                                                <input type="text" class="form-control" id="gName" placeholder="Enter Guest Name">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputPassword4">Room #</label>
+                                                                                <input type="number" class="form-control" id="Room" placeholder="Enter your Room No.">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="inputAddress">Total Charges</label>
+                                                                            <input type="text" class="form-control" id="Charges" placeholder=" Enter Charges">
+                                                                        </div>
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputState">Stay Duration From</label>
+                                                                                <input type="datetime-local" class="form-control" id="Duration" placeholder="Enter your Duration">
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="inputZip">To</label>
+                                                                                <input type="datetime-local" class="form-control" id="Duration" placeholder="Duration">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -274,6 +322,39 @@
         </section>
     </div>
     <div class="tab-pane fade" id="pills-guest" role="tabpanel" aria-labelledby="pills-guest-tab">
-        <div>Helllooooooooooooooooo</div>
+        <div>
+            <div class="form-group col-md-6">
+                <label for="inputZip">Date</label>
+                <input type="datetime-local" class="form-control" id="Duration" placeholder="Duration">
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Room#</th>
+                        <th scope="col">Guest Name</th>
+                        <th scope="col">Res #</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>321</td>
+                        <td><p>1500</p></td>
+                        <td>DD/MM/YYYY</td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>546</td>
+                        <td><p>3500</p></td>
+                        <td>DD/MM/YYYY</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
